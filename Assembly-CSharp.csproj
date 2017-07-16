@@ -50,11 +50,8 @@
      <Compile Include="Assets\Scripts\EnemyRelated\EnemyPathFinding.cs" />
      <Compile Include="Assets\Scripts\PlayerRelated\CameraController.cs" />
      <Compile Include="Assets\Scripts\PlayerRelated\FOV.cs" />
-     <Compile Include="Assets\Scripts\PlayerRelated\Interact.cs" />
-     <Compile Include="Assets\Scripts\PlayerRelated\Inventory.cs" />
      <Compile Include="Assets\Scripts\PlayerRelated\MouseLook.cs" />
      <Compile Include="Assets\Scripts\PlayerRelated\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\WorldRelated\PickUps.cs" />
      <None Include="Assets\Objects\Bush_Corner\archibase.net.txt" />
      <None Include="Assets\Objects\Weeping angel baby\archibase.net.txt" />
      <None Include="Assets\Objects\Bush_Straight\archibase.net.txt" />
