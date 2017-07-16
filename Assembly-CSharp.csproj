@@ -46,8 +46,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\EnemyRelated\EnemyMovement.cs" />
-     <Compile Include="Assets\Scripts\ILOS.cs" />
+     <Compile Include="Assets\Scripts\EnemyRelated\EnemyController.cs" />
+     <Compile Include="Assets\Scripts\EnemyRelated\EnemyPathFinding.cs" />
+     <Compile Include="Assets\Scripts\PlayerRelated\CameraController.cs" />
+     <Compile Include="Assets\Scripts\PlayerRelated\FOV.cs" />
      <Compile Include="Assets\Scripts\PlayerRelated\Interact.cs" />
      <Compile Include="Assets\Scripts\PlayerRelated\Inventory.cs" />
      <Compile Include="Assets\Scripts\PlayerRelated\MouseLook.cs" />
