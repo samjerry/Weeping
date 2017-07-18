@@ -11,6 +11,15 @@ public class FOV : MonoBehaviour
 	public LayerMask targetMask;
 	public LayerMask obstacleMask;
 
+	public Vector3 DirFromAngle(float angleInDegrees, bool angleIsGLobal)
+	{
+		if(!angleIsGLobal)
+		{
+			angleInDegrees += transform.eulerAngles.y;
+		}
+		return new Vector3(Mathf.Sin(angleInDegrees * Mathf.Deg2Rad), 0, Mathf.Cos(angleInDegrees * Mathf.Deg2Rad));
+	}
+
 	[HideInInspector]
 	public List<Transform> visibleTargets = new List<Transform>();
 
@@ -45,14 +54,5 @@ public class FOV : MonoBehaviour
 				}
 			}
 		}
-	}
-
-	public Vector3 DirFromAngle(float angleInDegrees, bool angleIsGLobal)
-	{
-		if(!angleIsGLobal)
-		{
-			angleInDegrees += transform.eulerAngles.y;
-		}
-		return new Vector3(Mathf.Sin(angleInDegrees * Mathf.Deg2Rad), 0, Mathf.Cos(angleInDegrees * Mathf.Deg2Rad));
 	}
 }

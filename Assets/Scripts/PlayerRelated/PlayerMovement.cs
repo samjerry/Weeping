@@ -14,14 +14,6 @@ public class PlayerMovement : MonoBehaviour
 	private Vector3 moveInput;
 	private Vector3 moveVelocity;
 
-	private Rigidbody myRB;
-
-
-	void Start()
-	{
-		myRB = GetComponent<Rigidbody>();
-	}
-
 	void Update()
 	{
 		
@@ -45,11 +37,6 @@ public class PlayerMovement : MonoBehaviour
 		{
 			transform.position = transform.position + Camera.main.transform.right * distance * Time.deltaTime;
 		}
-		transform.position = new Vector3(transform.position.x, y, transform.position.z);	
-	}
-
-	void FixedUpdate()
-	{
-		myRB.velocity = moveVelocity;
+		transform.position = new Vector3 (transform.position.x, 3.447f, transform.position.z);
 	}
 }

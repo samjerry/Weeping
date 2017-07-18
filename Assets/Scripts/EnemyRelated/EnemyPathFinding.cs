@@ -19,36 +19,16 @@ public class EnemyPathFinding : MonoBehaviour {
 		_ec = GetComponent<EnemyController> ();
 	}
 
-	/*
-	void Update(){
-		// *if (!_ec.IsILOS) 
-		{
-			//agent.destination = thePlayer.transform.position;
-		//	agent.SetDestination (thePlayer.transform.position);
-		//	agent.
-		}
-		*
-
-		agent.
-
-	}
-	*/
-
 	void Update()
 	{
 		if (agent.enabled == _ec.IsILOS) 
+		{
 			agent.enabled = !_ec.IsILOS;
+		}
 
 		if (agent.enabled)
+		{
 			agent.SetDestination (thePlayer.transform.position);
-	}
-		
-
-
-	void OnTriggerEnter(Collider other){
-		if (other.gameObject.CompareTag ("Player")) {
-			myRB.velocity = -transform.forward * 2;
 		}
 	}
 }
-
